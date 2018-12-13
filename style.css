@@ -35,13 +35,10 @@ nav.top li {
 	display: inline;
 	padding: 5px;
 }
-
-
-nav.top li.left {
+nav.top ul.left {
 	float: left;
 }
-
-nav.top li.right {
+nav.top ul.right {
 	float: right;
 }
 
