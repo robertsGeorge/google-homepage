@@ -28,40 +28,98 @@ time, mark, audio, video {
 
 /*END OF CSS RESET*/
 
-nav.top {
+body {
+	font-family: Arial, sans-serif;
+	font-size: 0.8em;
+	color: rgb(85, 84, 84);
+}
+
+nav {
+	width: 100%;
+	height: 50px;	
 	margin: 15px 15px 15px 15px;
 }
-nav.top li {
+nav li {
 	display: inline;
 	padding: 5px;
 }
-nav.top ul.left {
+nav ul.left {
 	float: left;
 }
-nav.top ul.right {
+nav ul.right {
 	float: right;
+	margin-right: 30px;
+}
+/* offset position of "About" and "Store" nav links */
+.offset2 {
+	position: relative;
+	top: 8px;
+	left: 3px;
+}
+/* offset position of "Gmail" and "Images" nav links */
+.offset {
+	position: relative;
+	bottom: 13px;
+	right: 10px;
 }
 
+/* logo and search bar/buttons */
 .container {
-	width: 300px;
+	width: 500px;
 	margin: auto;
 	position: relative;
-	top: 200px;
-	
+	top: 175px;
+	left: 70px;
 }
-
-img {
-	width: 90%;
+#logo {
+	width: 70%;
 	margin: auto;
 }
-
 input {
 	width: 100%;
-	height: 25px;
+	height: 35px;
 	position: relative;
-	bottom: 40px;
-	right: 20px;
+	bottom: 35px;
+	right: 80px;
+}
+#mic {
+	position: absolute;
+	left: 390px;
+	bottom: 87px;
+	z-index: 10;
+}
+div.searchButtons div {
+	display: inline-block;
+	position: relative;
+	left: 40px;
+	bottom: 15px;
+	padding: 10px;
+	margin: 5px;
+	font-size: 10pt;
+	font-weight:bold;
+	color: grey;
+	background-color: rgb(242, 242, 242); 	
 }
 
-
-
+/* bottom nav bar */
+footer {
+	width: 100%;
+	padding: 15px;
+	position: fixed;
+	bottom: 0;
+	background-color: rgb(242, 238, 238);	
+}
+footer li {
+	display: inline;
+	padding: 10px;
+}
+footer ul.left {
+	float: left;
+}
+footer ul.right {
+	float: right;
+}
+/* padding correction of settings list item */
+li.settings {
+	padding-right: 40px;
+}
